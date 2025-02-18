@@ -3,3 +3,19 @@ server:
 spring:
   application:
     name: todo-list-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/todo_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root  # MySQL 사용자명 (변경 가능)
+    password: root  # MySQL 비밀번호 (변경 가능)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
