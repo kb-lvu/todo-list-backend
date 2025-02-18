@@ -38,3 +38,7 @@ out/
 
 ### Kotlin ###
 .kotlin
+
+# Ignore application configuration files
+src/main/resources/application.yml
+src/main/resources/application.properties
